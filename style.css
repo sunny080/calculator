@@ -1,4 +1,6 @@
 *{
+    transition: all .5s;
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,9 +12,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
     min-height: 100vh;
     transition: all .3s;
-    animation:self 20s infinite linear;
+    animation:self 25s infinite linear;
 }
 @keyframes self {
     0%{
@@ -20,18 +23,23 @@ body{
     transition: .3s;
        
     }
-    25%{
+    20%{
         background:linear-gradient(120deg,#4d3ae2,#e65116) ;
         transition: .3s;
            
     }
-    50%{
+    40%{
         background:linear-gradient(120deg,#64a8df,#d4af7e) ;
         transition: .3s;
            
     }
-    75%{
+    60%{
         background:linear-gradient(120deg,#5ce0a9,#ec88a1) ;
+        transition: .3s;
+           
+    }
+    80%{
+        background:linear-gradient(120deg,#b7e7d3,#4e1b28) ;
         transition: .3s;
            
     }
@@ -51,7 +59,7 @@ body{
     background-color: rgb(255, 255, 255,.4);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-
+    box-shadow: 1ps 1ps 5px black;
     grid-column: 4;
     height: 100px;
     text-align: right;
@@ -64,7 +72,7 @@ body{
 }
 span{
     display: grid;
-    
+    box-shadow: 1ps 1ps 5px black;
     width: 60px;
     height: 60px;
     color: #fff;
